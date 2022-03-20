@@ -1,0 +1,179 @@
+/* Style the buttons that are used to open and close the accordion panel */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/* font-family: 'Kumbh Sans', sans-serif; */
+*{
+  font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+height: 100vh;
+display: grid;
+background: linear-gradient( hsl(273, 75%, 66%),  hsl(240, 73%, 65%));
+place-content: center;
+}
+.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .container{
+    transition: 0.5s;
+    width: 70vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 25px;
+    /* overflow: hidden; */
+    
+
+
+  }
+  .dro{
+    width: 35vw;
+    /* transform: translateX(-180%); */
+  }
+  .dro>h1{
+    transform: translateX(3%);
+    margin-top: 5%;
+    font-weight: 700;
+    width: 42vw;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+  i{
+    float: right;
+  }
+  .accordion-button:hover{
+    color: hsl(44, 100%, 50%);
+
+  }
+  accordion-body{
+    color: black;
+  }
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .btn-m{
+    background-color: white;
+    border: none;
+    font-size: 16px;
+   
+  }
+  h2{
+    height: 55px;
+  }
+  .btn-m:hover{
+    color: hsl(44, 100%, 50%);
+
+  }
+.btn-m{
+  width: 100%;
+  text-align: left;
+
+
+}
+.up-so{
+  height: 1px;
+
+}
+#btn1m{
+  display: none;
+  color: hsl(44, 100%, 50%);
+
+}
+#btn2m{
+  display: none;
+  color: hsl(44, 100%, 50%);
+
+  
+}
+#btn3m{
+  display: none;
+  color: hsl(44, 100%, 50%);
+
+}
+#btn4m{
+  display: none;
+  color: hsl(44, 100%, 50%);
+
+}
+#btn5m{
+  display: none;
+  color: hsl(44, 100%, 50%);
+
+}
+#bgs{
+  height: 92vh;
+  transform: translate(-35%, -13%);
+}
+.container{
+  display: flex;
+}
+#online{
+  transform: translate(-142%, 12%);
+  width: 41vw;
+  height: 58vh;
+}
+#box{
+  /* transform: rotate(49deg); */
+  z-index: 1;
+  width: 30vw;
+  height: 30vh;
+   transform: translate(-56%, 99%);
+   transition: 0.5s;
+  
+}
+#box:hover{
+  transform: translate(-76%, 98%)
+}
+.images{
+  display: flex;
+  transform: translate(-6%, 10px);
+  overflow: hidden;
+  margin-left: -22.1%;
+}
+@media screen and (max-width:768px) {
+  .container{
+    flex-direction: column;
+    height:80vh;
+    margin-top: 22%;
+  }
+  .dro{
+    width: 66vw;
+    /* transform: translateX(-180%); */
+    transform: translate(2%, -69%);
+    
+  }
+  .dro>h1{
+    text-align: center;
+  }
+  .images{
+    overflow: visible;
+    margin-top: 20%;
+    transform: translate(-4%, -64%);
+  }
+  #bgs{
+    transform: translate(130%, -98%);
+    height: 28vh;
+    width: 28vw;
+  }
+  #online{
+    transform: translate(30%, -100%);
+    width: 28vw;
+    height: 28vh;
+  }
+  #box{
+    width: 15vw;
+    height: 15vh;
+    transform: translate(95%, -49%);
+  }
+}
